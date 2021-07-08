@@ -385,7 +385,7 @@ const track_list = [
 ]
 
 const pathName = (window.location.pathname).split('/')[2];
-console.log(pathName);
+// console.log(pathName);
 if (pathName == 'music.html') {
 
     track_list.forEach((obj, i) => {
