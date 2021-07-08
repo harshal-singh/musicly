@@ -384,7 +384,7 @@ const track_list = [
     }
 ]
 
-const pathName = (window.location.pathname).split('/')[1];
+const pathName = (window.location.pathname).split('/')[2];
 console.log(pathName);
 if (pathName == 'music.html') {
 
