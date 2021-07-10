@@ -1,3 +1,3 @@
 # musicly
 
-A simple javascript music player project 🤗!
+A simple javascript music player 🤗!
