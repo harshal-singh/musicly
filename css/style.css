@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 :root{
@@ -84,6 +85,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .logo{
@@ -175,6 +177,8 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-bottom: 1px solid #e9e9e9;
+    box-shadow: inset -5px -10px 10px rgba(0 0 0 / 2%);
 }
 
 #music::-webkit-scrollbar {
@@ -267,7 +271,7 @@ nav{
 .media{
     display: grid;
     place-items: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .image-box{
@@ -312,7 +316,7 @@ nav{
 }
 
 .time-line{
-    width: 50%;
+    width: 0%;
     height: 5px;
     border-radius: 5px;
     background: linear-gradient(-90deg, #61F4DE -25%, #6E78FF);
@@ -338,11 +342,21 @@ nav{
 
 #prev,
 #next,
-#paly-pause{
+#paly-pause,
+#repeat-one,
+#shuffle{
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+#repeat-one{
+    margin-right: 25px;
+}
+
+#shuffle{
+    margin-left: 25px;
 }
 
 .text{
