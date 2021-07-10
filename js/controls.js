@@ -458,18 +458,18 @@ if (pathName == 'music') {
 
     // playTrack
     function playTrack() {
+        cd.style.animationPlayState = 'running';
         curr_track.play();
         isPlaying = true;
-        cd.style.animationPlayState = 'running';
 
         play__pause.innerHTML = '<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 41.25C12.1444 41.25 3.75 32.8556 3.75 22.5C3.75 12.1444 12.1444 3.75 22.5 3.75C32.8556 3.75 41.25 12.1444 41.25 22.5C41.25 32.8556 32.8556 41.25 22.5 41.25ZM16.875 16.875V28.125H20.625V16.875H16.875ZM24.375 16.875V28.125H28.125V16.875H24.375Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="22.5" y1="3.75" x2="22.5" y2="41.25" gradientUnits="userSpaceOnUse"><stop stop-color="#61F4DE"/><stop offset="1" stop-color="#6E78FF"/></linearGradient></defs></svg>';
     }
 
     // pauseTrack
     function pauseTrack() {
+        cd.style.animationPlayState = 'paused';
         curr_track.pause();
         isPlaying = false;
-        cd.style.animationPlayState = 'paused';
 
         play__pause.innerHTML = '<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 41.25C12.1444 41.25 3.75 32.8556 3.75 22.5C3.75 12.1444 12.1444 3.75 22.5 3.75C32.8556 3.75 41.25 12.1444 41.25 22.5C41.25 32.8556 32.8556 41.25 22.5 41.25ZM19.9163 15.7781C19.8034 15.7028 19.6723 15.6596 19.5368 15.6529C19.4013 15.6463 19.2665 15.6765 19.1468 15.7404C19.0272 15.8042 18.9271 15.8994 18.8572 16.0157C18.7873 16.1319 18.7503 16.265 18.75 16.4006V28.5994C18.7503 28.735 18.7873 28.8681 18.8572 28.9844C18.9271 29.1006 19.0272 29.1958 19.1468 29.2596C19.2665 29.3235 19.4013 29.3537 19.5368 29.3471C19.6723 29.3404 19.8034 29.2972 19.9163 29.2219L29.0644 23.1244C29.1673 23.0559 29.2516 22.9631 29.31 22.8542C29.3683 22.7452 29.3989 22.6236 29.3989 22.5C29.3989 22.3764 29.3683 22.2548 29.31 22.1458C29.2516 22.0369 29.1673 21.9441 29.0644 21.8756L19.9144 15.7781H19.9163Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="22.5" y1="3.75" x2="22.5" y2="41.25" gradientUnits="userSpaceOnUse"><stop stop-color="#61F4DE"/><stop offset="1" stop-color="#6E78FF"/></linearGradient></defs></svg>';
     }
