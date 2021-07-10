@@ -17,6 +17,7 @@ a{
 }
 
 #loader{
+    z-index: 2;
     position: fixed;
     width: 100vw;
     height: 100vh;
