@@ -491,15 +491,15 @@ if (pathName == 'music') {
     function prevTrack() {
         if (track_index > 0) {
             track_index--;
-            window.location = `song.html?id=${track_index}`;
         }
         else {
             // last track = track_list.lenght -1
             track_index = track_list.length - 1;
-            window.location = `song.html?id=${track_index}`;
         }
+        localStorage.setItem('id', track_index);
+
         loadTrack(track_index);
-        // playTrack();
+        playTrack();
     };
     prev.addEventListener('click', prevTrack);
 
