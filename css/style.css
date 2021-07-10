@@ -17,12 +17,15 @@ a{
 }
 
 #loader{
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, #61F4DE -25%, #6E78FF);
+    opacity: 1;
+    transition: all 1s;
 }
 
+.animate::before,
 #loader::before{
     position: absolute;
     content: '';
@@ -51,6 +54,7 @@ a{
     }
 }
 
+.animate::after,
 #loader::after{
     position: absolute;
     content: 'Musicly';
@@ -145,8 +149,8 @@ nav{
 }
 
 .animate{
-    width: 10px;
-    height: 10px;
+    width: 0;
+    height: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -207,6 +211,7 @@ nav{
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px 140px;
     margin-top: 60px;
+    padding-bottom: 30px;
 }
 
 .song{
