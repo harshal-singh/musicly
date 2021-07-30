@@ -111,7 +111,7 @@ const track_list = [
     {
         name: "high rated gabru",
         artist: "Guru Randhawa",
-        image: "sources/images/07_high_rated_gabru.jpeg",
+        image: "sources/images/07_high_rated_gabru.jpg",
         path: "sources/songs/07_high_rated_gabru.mp3",
         time: "3:36",
         link: "https://www.youtube.com/watch?v=hjWf8A0YNSE",
