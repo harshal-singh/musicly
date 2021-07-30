@@ -391,11 +391,11 @@ const track_list = [
 
 const pathName = (window.location.pathname).split('/').slice(-1)[0];
 // console.log(pathName);
-if (pathName == 'music') {
+if (pathName == 'all-musics') {
 
     track_list.forEach((obj, i) => {
         let num = (i + 1) < 10 ? "0" + (i + 1) : (i + 1);
-        let html = `<a href="song" class="song">
+        let html = `<a href="music?name=${obj.name}" class="music">
                         <div>
                             <span class="number">${num}</span>
                             <div>
@@ -605,10 +605,10 @@ if (pathName == 'music') {
     });
 }
 
-// play this song
-const song = document.querySelectorAll(".song");
-song.forEach((s, i) => {
-    s.addEventListener('click', () => {
+// play this music
+const music = document.querySelectorAll(".music");
+music.forEach((m, i) => {
+    m.addEventListener('click', () => {
         localStorage.setItem('id', i);
     });
 });

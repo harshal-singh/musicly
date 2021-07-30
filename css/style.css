@@ -219,12 +219,12 @@ nav{
     padding-bottom: 30px;
 }
 
-.song{
+.music{
     display: flex;
     justify-content: space-between;
 }
 
-.song > div{
+.music > div{
     display: flex;
     justify-content: space-between;
 }
@@ -241,11 +241,11 @@ nav{
     margin-right: 25px;
 }
 
-.song:hover .number{
+.music:hover .number{
     -webkit-text-fill-color: white;
 }
 
-.song:hover .number::after{
+.music:hover .number::after{
     position: absolute;
     z-index: -1;
     content: '';
@@ -258,13 +258,13 @@ nav{
     background: linear-gradient(320deg, #6E78FF 20%, #61F4DE 100%);
 }
 
-.song h4{
+.music h4{
     margin-bottom: 2px;
     text-transform: capitalize;
 }
 
-.song h5,
-.song small{
+.music h5,
+.music small{
     color: #858585;
 }
 
